@@ -5,7 +5,6 @@
 #include <netdb.h>
 #include <errno.h>
 #include "arraylist.h"
-#include "util.h"
 
 #define BUFSIZE 1024
 
@@ -151,5 +150,5 @@ struct myargs parseArgs(int argc, char** argv) {
 int main(int argc, char** argv) {
     struct myargs args = parseArgs(argc, argv);
     
-    // TODO: Fill this in
+    // TODO: Fill this in.  You may want to add some helper methods for better organization
 }
