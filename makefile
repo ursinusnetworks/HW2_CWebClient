@@ -1,10 +1,10 @@
 CC=gcc
 CFLAGS=-g -Wall -pedantic
 
-all: client
+all: mywget
 
-client: arraylist.h client.c
-	$(CC) $(CFLAGS) -o client client.c
+mywget: arraylist.h mywget.c
+	$(CC) $(CFLAGS) -o mywget mywget.c
 
 clean:
-	rm client
+	rm mywget
