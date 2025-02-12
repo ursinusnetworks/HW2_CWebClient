@@ -74,12 +74,13 @@ struct myargs parseArgs(int argc, char** argv) {
 
     // Step 2: Parse user specified values
     // Advance to the next element
+    char* programName = argv[0];
     argv++; 
     argc--; 
     while (argc > 0) {
         if((*argv)[0] == '-') {
             if (strcmp(*argv, "--help") == 0) {
-                printf("Usage: ./client --url <url of file>");
+                printf("Usage: %s --url <url of file>", programName);
                 printf(" --target <target filename to save>");
                 printf(" [--port <port number>] [--timeout <timeout>]\n");
                 exit(0);
